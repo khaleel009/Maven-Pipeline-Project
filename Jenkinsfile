@@ -1,5 +1,6 @@
 pipeline{
      agent { label 'slavenode' }
+     tools { maven 'maven-3.9.9' }
      stages{
           stage("Checkout"){
                steps{
