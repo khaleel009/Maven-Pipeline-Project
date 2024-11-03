@@ -10,7 +10,7 @@ pipeline{
           stage("Build"){
                steps{
                sh 'mvn clean package'
-               sh 'java -cp target/awesome-stylish-maven-project-1.0-SNAPSHOT-shaded.jar com.example.app.Main'
+               sh 'java -cp target/awesome-stylish-maven-project-1.0-SNAPSHOT.jar com.example.app.Main'
           }
           }
      }
